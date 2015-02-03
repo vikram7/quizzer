@@ -1,0 +1,9 @@
+<dl class="tabs" data-tab>
+  {{#each tab in tabs}}
+    <dd><a {{bind-attr href=tab.href}}>{{tab.title}}</a></dd>
+  {{/each}}
+</dl>
+
+<div class="tabs-content">
+  {{yield}}
+</div>

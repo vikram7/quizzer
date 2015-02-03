@@ -1,0 +1,75 @@
+<h2>Joyride</h2>
+<h3 class="subheader">See <a href="http://foundation.zurb.com/docs/components/joyride.html">Foundation - Joyride</a></h3>
+
+<hr>
+
+<h3>Example</h3>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{#f-joyride start=startDemo}}
+
+  \{{#f-stop at="joyrideDemoStop1" nextText="Cool"}}
+    &lt;p&gt;Hello and welcome to the Joyride demo page.&lt;/p&gt;
+  \{{/f-stop}}
+
+  \{{#f-stop at="joyrideDemoStop2" nextText="Okay"}}
+    &lt;h4&gt;Stop #2&lt;/h4&gt;
+    &lt;p&gt;Here's the next stop.&lt;/p&gt;
+  \{{/f-stop}}
+
+  \{{#f-stop button="End"}}
+    &lt;h4&gt;Final Stop&lt;/h4&gt;
+    &lt;p&gt;It works as a modal too!&lt;/p&gt;
+  \{{/f-stop}}
+
+\{{/f-joyride}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+
+    {{#f-button action="startDemo"}}Start Joyride Demo{{/f-button}}
+
+    {{#f-joyride start=startDemo}}
+
+      {{#f-stop at="joyrideDemoStop1" nextText="Cool"}}
+        <p>Hello and welcome to the Joyride demo page.</p>
+      {{/f-stop}}
+
+      {{#f-stop at="joyrideDemoStop2" nextText="Okay"}}
+        <h4>Stop #2</h4>
+        <p>Here's the next stop.</p>
+      {{/f-stop}}
+
+      {{#f-stop button="End"}}
+        <h4>Final Stop</h4>
+        <p>It works as a modal too!</p>
+      {{/f-stop}}
+
+    {{/f-joyride}}
+  </div>
+</div>
+
+<h5 id="joyrideDemoStop1">The first demo stop</h5>
+
+<h5 id="joyrideDemoStop2">The second demo stop</h5>
+
+<hr>
+
+<h3>F-Stop Properties</h3>
+
+<dl>
+  <dt>at <span class="label secondary">string</span></dt>
+  <dd><code>id</code> attribute value of the element to stop at. If this is undefined, the stop will behave like a modal.</dd>
+
+  <dt>button <span class="label secondary">string</span></dt>
+  <dd>Text to display for "next" button.</dd>
+
+  <dt>nextText <span class="label secondary">string</span></dt>
+  <dd>Text to display for "next" action.</dd>
+
+  <dt>prevText <span class="label secondary">string</span></dt>
+  <dd>Text to display for "previous" action.</dd>
+</dl>

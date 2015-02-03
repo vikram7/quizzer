@@ -1,0 +1,13 @@
+<li {{bind-attr aria-disabled=onFirstPage class="arrow onFirstPage:unavailable"}}>
+  <a {{action "previousPage"}}>&laquo;</a>
+</li>
+
+{{#each page in pages}}
+  <li {{bind-attr class="page.current:current"}}>
+    <a {{action "changePage" page.number}}>{{page.number}}</a>
+  </li>
+{{/each}}
+
+<li {{bind-attr aria-disabled=onLastPage class="arrow onLastPage:unavailable"}}>
+  <a {{action "nextPage"}}>&raquo;</a>
+</li>

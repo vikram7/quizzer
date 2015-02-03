@@ -1,0 +1,76 @@
+<h2>Accordion</h2>
+<h3 class="subheader">See <a href="http://foundation.zurb.com/docs/components/accordion.html">Foundation - Accordion</a></h3>
+
+<hr>
+
+<h3>Example</h3>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{#f-accordion}}
+
+  \{{#f-accordion-panel
+    id="accordionDemoPanel1"
+    title="Panel 1"}}
+    &lt;p&gt;Panel 1 content goes here&lt;/p&gt;
+  \{{/f-accordion-panel}}
+
+  \{{#f-accordion-panel
+    id="accordionDemoPanel2"
+    title="Panel 2"}}
+    &lt;p&gt;Panel 2 content goes here&lt;/p&gt;
+  \{{/f-accordion-panel}}
+
+  \{{#f-accordion-panel
+    id="accordionDemoPanel3"
+    title="Panel 3"}}
+    &lt;p&gt;Panel 3 content goes here&lt;/p&gt;
+  \{{/f-accordion-panel}}
+
+\{{/f-accordion}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+    {{#f-accordion}}
+
+      {{#f-accordion-panel id="accordionDemoPanel1" title="Panel 1"}}
+        <p>Panel content 1 goes here</p>
+      {{/f-accordion-panel}}
+
+      {{#f-accordion-panel id="accordionDemoPanel2" title="Panel 2"}}
+        <p>Panel content 2 goes here</p>
+      {{/f-accordion-panel}}
+
+      {{#f-accordion-panel id="accordionDemoPanel3" title="Panel 3"}}
+        <p>Panel content 3 goes here</p>
+      {{/f-accordion-panel}}
+
+    {{/f-accordion}}
+  </div>
+</div>
+
+<hr>
+
+<h3>F-Accordion Properties</h3>
+
+<dl>
+  <dt>class <span class="label secondary">string</span></dt>
+  <dd>Extra classes to attach to the accordion.</dd>
+</dl>
+
+<hr>
+
+<h3>F-Accordion-Panel Properties</h3>
+
+<dl>
+  <dt>class <span class="label secondary">string</span></dt>
+  <dd>Extra classes to attach to the accordion panel.</dd>
+
+  <dt>id <span class="label secondary">string</span> <span class="label alert">required</span></dt>
+  <dd>Unique identifier string for the panel.</dd>
+
+  <dt>title <span class="label secondary">string</span> <span class="label alert">required</span></dt>
+  <dd>Title for the panel heading.</dd>
+</dl>

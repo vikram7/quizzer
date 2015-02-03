@@ -1,0 +1,74 @@
+<h2>Dropdowns</h2>
+<h3 class="subheader">See <a href="http://foundation.zurb.com/docs/components/dropdown.html">Foundation - Dropdown</a></h3>
+
+<hr>
+
+<h3>Examples</h3>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{#f-button dropdownId="dropdownDemo1"}}
+  Link Dropdown &amp;raquo;
+\{{/f-button}}
+
+\{{#f-dropdown id="dropdownDemo1"}}
+  &lt;li&gt;&lt;a&gt;This is a link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a&gt;This is another&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a&gt;Yet another&lt;/a&gt;&lt;/li&gt;
+\{{/f-dropdown}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+
+    {{#f-button dropdown="dropdownDemo1"}}Link Dropdown &raquo;{{/f-button}}
+
+    {{#f-dropdown id="dropdownDemo1"}}
+      <li><a>This is a link</a></li>
+      <li><a>This is another</a></li>
+      <li><a>Yet another</a></li>
+    {{/f-dropdown}}
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{#f-button dropdownId="dropdownDemo2"}}
+  Content Dropdown &amp;raquo;
+\{{/f-button}}
+
+\{{#f-dropdown content=true id="dropdownDemo2"}}
+  &lt;h4&gt;Title&lt;/h4&gt;
+  &lt;p&gt;Some text that people will think is awesome!&lt;/p&gt;
+\{{/f-dropdown}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+
+    {{#f-dropdown content=true id="dropdownDemo2"}}
+      <h4>Title</h4>
+      <p>Some text that people will think is awesome!</p>
+    {{/f-dropdown}}
+
+    {{#f-button dropdown="dropdownDemo2"}}Content Dropdown &raquo;{{/f-button}}
+  </div>
+</div>
+
+<hr>
+
+<h3>Properties</h3>
+
+<dl>
+  <dt>content <span class="label secondary">boolean</span> <span class="label">default: false</span></dt>
+  <dd>When true, the dropdown is styled more like a standalone content div.</dd>
+
+  <dt>id <span class="label secondary">string</span> <span class="label alert">required</span></dt>
+  <dd>
+    The <code>id</code> attribute value for the dropdown container.
+    This is also the value that needs to be set on a button for it to properly
+    open the dropdown.
+  </dd>
+</dl>

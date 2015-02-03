@@ -1,0 +1,83 @@
+<h2>Switches</h2>
+<h3 class="subheader">See <a href="http://foundation.zurb.com/docs/components/switch.html">Foundation - Switches</a></h3>
+
+<hr>
+
+<h2>F-Switch</h2>
+<p>For a single, toggleable switch, use \{{f-switch}} with a bound boolean value.</p>
+
+<h3>Example</h3>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{f-switch value=switchDemoValue}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+    {{f-switch value=switchDemoValue}}
+  </div>
+</div>
+
+<hr>
+
+<h3>F-Switch Properties</h3>
+
+<dl>
+  <dt>name <span class="label secondary">string</span></dt>
+  <dd><code>name</code> attribute value for the switch.</dd>
+
+  <dt>value <span class="label secondary">boolean</span></dt>
+  <dd>Bound, toggleable value for the switch.</dd>
+</dl>
+
+<hr>
+
+<h2>F-Switches</h2>
+<p>For multiple exclusive options, and/or non-boolean value selections, use \{{f-switches}}.</p>
+
+<h3>Example</h3>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{f-switches
+  name="switches-demo"
+  options=switchesOptions
+  value=switchDemoValue
+}}</code></pre>
+
+    <h4>Controller</h4>
+    <pre><code>switchesOptions: [
+  {
+    id: 'a',
+    label: 'Off',
+    value: 'off'
+  }, {
+    id: 'a1',
+    label: 'On',
+    value: 'on'
+  }
+],
+
+switchesValue: 'off'</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+    {{f-switches name="switches-demo" options=switchesOptions value=switchesValue}}
+  </div>
+</div>
+
+<hr>
+
+<h3>F-Switches Properties</h3>
+
+<dl>
+  <dt>name <span class="label secondary">string</span></dt>
+  <dd>Shared <code>name</code> attribute value for the switches.</dd>
+
+  <dt>value <span class="label secondary">boolean</span></dt>
+  <dd>Bound, shared, toggleable value for the switches.</dd>
+</dl>

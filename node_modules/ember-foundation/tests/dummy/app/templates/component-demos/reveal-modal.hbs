@@ -1,0 +1,38 @@
+<h2>Reveal Modal</h2>
+<h3 class="subheader">See <a href="http://foundation.zurb.com/docs/components/reveal.html">Foundation - Reveal Modal</a></h3>
+
+<hr>
+
+<h3>Example</h3>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{#f-button class="radius" revealId="modalDemo"}}
+  Open Modal&amp;hellip;
+\{{/f-button}}
+
+\{{#f-reveal-modal id="modalDemo"}}
+  &lt;h2&gt;This is a modal!&lt;/h2&gt;
+\{{/f-reveal-modal}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+
+    {{#f-button class="radius" revealId="modalDemo"}}Open Modal&hellip;{{/f-button}}
+
+    {{#f-reveal-modal id="modalDemo"}}
+      <h2>This is a modal!</h2>
+    {{/f-reveal-modal}}
+  </div>
+</div>
+
+<hr>
+
+<h3>Properties</h3>
+
+<dl>
+  <dt>id <span class="label secondary">string</span> <span class="label alert">required</span></dt>
+  <dd><code>id</code> attribute value for the modal.</dd>
+</dl>
