@@ -6,6 +6,24 @@
 
 <div class="row">
   <div id="description">
-    Description: {{markdown-to-html markdown=description}}
+    {{eg-code-highlight code=description language='html'}}
+  </div>
+</div>
+
+
+<div class="row"
+  <h3>And here is some code: </h3>
+</div>
+
+<div class="row">
+  <div id="description">
+    {{eg-code-highlight code="
+    array = Array.new
+    array << 1
+    array << 2
+    array.each do |num|
+      puts num
+    end"
+    language='ruby'}}
   </div>
 </div>
