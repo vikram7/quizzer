@@ -1,0 +1,85 @@
+<h2>Clearing</h2>
+<h3 class="subheader">See <a href="http://foundation.zurb.com/docs/components/clearing.html">Foundation - Clearing</a></h3>
+
+<hr>
+
+<h3>Example</h3>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{#f-clearing}}
+  \{{f-clearing-image
+    alt="Comet image"
+    caption="This is the comet image."
+    thumbnail="/img/examples/comet-th-sm.jpg"
+    url="/img/examples/comet.jpg"
+  }}
+
+  \{{f-clearing-image
+    alt="Earth image"
+    thumbnail="/img/examples/earth-th-sm.jpg"
+    url="/img/examples/earth.jpg"
+  }}
+
+  \{{f-clearing-image
+    alt="Launch image"
+    caption="This is the launch image."
+    thumbnail="/img/examples/launch-th-sm.jpg"
+    url="/img/examples/launch.jpg"
+  }}
+\{{/f-clearing}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Template</h4>
+    {{#f-clearing}}
+        {{f-clearing-image
+          alt="Comet image"
+          caption="This is the comet image."
+          thumbnail="http://foundation.zurb.com/docs/assets/img/examples/comet-th-sm.jpg"
+          url="http://foundation.zurb.com/docs/assets/img/examples/comet.jpg"
+        }}
+
+        {{f-clearing-image
+          alt="Earth image"
+          thumbnail="http://foundation.zurb.com/docs/assets/img/examples/earth-th-sm.jpg"
+          url="http://foundation.zurb.com/docs/assets/img/examples/earth.jpg"
+        }}
+
+        {{f-clearing-image
+          alt="Launch image"
+          caption="This is the launch image."
+          thumbnail="http://foundation.zurb.com/docs/assets/img/examples/launch-th-sm.jpg"
+          url="http://foundation.zurb.com/docs/assets/img/examples/launch.jpg"
+        }}
+    {{/f-clearing}}
+  </div>
+</div>
+
+<hr>
+
+<h3>F-Clearing Properties</h3>
+
+<dl>
+  <dt>class <span class="label secondary">string</span></dt>
+  <dd>Extra classes to attach to the clearing container.</dd>
+</dl>
+
+<hr>
+
+<h3>F-Clearing-Image Properties</h3>
+
+<dl>
+  <dt>alt <span class="label secondary">string</span></dt>
+  <dd><code>alt</code> attribute value for the thumbnail.</dd>
+
+  <dt>caption <span class="label secondary">string</span></dt>
+  <dd>Caption text to display when the image is viewed at full size.</dd>
+
+  <dt>thumbnail <span class="label secondary">string</span> <span class="label alert">required</span></dt>
+  <dd>URL for the image's thumbnail.</dd>
+
+  <dt>url <span class="label secondary">string</span> <span class="label alert">required</span></dt>
+  <dd>URL for the full-size image.</dd>
+</dl>

@@ -1,0 +1,33 @@
+<h2>Pagination</h2>
+<h3 class="subheader">See <a href="http://foundation.zurb.com/docs/components/pagination.html">Foundation - Pagination</a></h3>
+
+<hr>
+
+<h3>Example</h3>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{f-pagination currentPage=3 totalPages=10}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+    {{f-pagination currentPage=3 totalPages=10}}
+  </div>
+</div>
+
+<hr>
+
+<h3>Properties</h3>
+
+<dl>
+  <dt>changePage <span class="label secondary">string</span></dt>
+  <dd>An action that is triggered when the page is changed.</dd>
+
+  <dt>currentPage <span class="label secondary">number</span> <span class="label alert">required</span></dt>
+  <dd>The currently selected page number.</dd>
+
+  <dt>totalPages <span class="label secondary">number</span> <span class="label alert">required</span></dt>
+  <dd>The total number of pages.</dd>
+</dl>

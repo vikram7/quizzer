@@ -1,0 +1,6 @@
+{{#each slide in slides}}
+  <li>
+    <img {{bind-attr alt=slide.imageAlt src=slide.imageUrl}}>
+    <div class="orbit-caption">{{slide.caption}}</div>
+  </li>
+{{/each}}

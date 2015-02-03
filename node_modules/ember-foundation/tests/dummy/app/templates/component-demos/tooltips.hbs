@@ -1,0 +1,63 @@
+<h2>Tooltips</h2>
+<h3 class="subheader">See <a href="http://foundation.zurb.com/docs/components/tooltips.html">Foundation - Tooltips</a></h3>
+
+<hr>
+
+<h3>Examples</h3>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{#f-tooltip title="I'm on bottom!"}}
+  Bottom tooltip (default)
+\{{/f-tooltip}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+    {{#f-tooltip title="I'm on bottom!" width=210}}
+      Bottom tooltip (default)
+    {{/f-tooltip}}
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 columns">
+    <h4>Template</h4>
+    <pre><code>\{{#f-tooltip
+  class="noradius"
+  position="top"
+  tagName="h3"
+  title="I'm on top and not rounded!"
+  width=210}}
+  Hello there
+\{{/f-tooltip}}</code></pre>
+  </div>
+
+  <div class="large-6 columns">
+    <h4>Rendered Component</h4>
+    {{#f-tooltip
+      class="noradius"
+      position="top"
+      tagName="h3"
+      title="I'm on top and not rounded!"
+      width=210}}
+      Hello there
+    {{/f-tooltip}}
+  </div>
+</div>
+
+<hr>
+
+<h3>Properties</h3>
+
+<dl>
+  <dt>position <span class="label secondary">string</span> <span class="label">default: "bottom"</span></dt>
+  <dd>Where to place the tooltip box, relative to the trigger element.</dd>
+
+  <dt>title <span class="label secondary">string</span> <span class="label alert">required</span></dt>
+  <dd>Text content of the tooltip box.</dd>
+
+  <dt>width <span class="label secondary">number</span></dt>
+  <dd>How wide to make the toolitp box.</dd>
+</dl>

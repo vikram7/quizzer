@@ -1,0 +1,6 @@
+{{#each option in options}}
+  <input {{bind-attr disabled=option.disabled id=option.id name=view.name readonly=option.readonly type=view.type value=option.value}} />
+  <label {{bind-attr for=option.id}}>{{option.label}}</label>
+{{/each}}
+
+<span></span>
