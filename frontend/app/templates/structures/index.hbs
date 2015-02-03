@@ -1,0 +1,7 @@
+<h3>All Structures</h3>
+
+<ul>
+  {{#each structure in model}}
+    <li>{{link-to structure.description 'structures.show' structure}}</li>
+  {{/each}}
+</ul>
