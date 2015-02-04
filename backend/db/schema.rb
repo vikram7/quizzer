@@ -18,10 +18,12 @@ ActiveRecord::Schema.define(version: 20150203190518) do
 
   create_table "structures", force: :cascade do |t|
     t.text     "description", null: false
+    t.text     "findable",    null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
   add_index "structures", ["description"], name: "index_structures_on_description", unique: true, using: :btree
+  add_index "structures", ["findable"], name: "index_structures_on_findable", unique: true, using: :btree
 
 end
